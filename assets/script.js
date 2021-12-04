@@ -122,6 +122,22 @@ var generateBtn = document.querySelector("#generate");
           password = password.concat(randomize(fullCharSet));
           console.log("This is the current password: " + password);
         }
+        // Converts a string to an array 
+        password = password.split('');
+
+        // Rearrange the array randomnly
+        console.log("After spliting: " + password);
+
+        for (n = password.length -1; n > 0 ; n--) {
+          j = Math.floor(Math.random() * n)
+          tempList = password[n];
+          password[n] = password[j];
+          password[j] = tempList;
+          }
+        
+        // Converts the array back into a string
+        password = password.join('');
+        console.log(password);
         return password;
       }
       else {
