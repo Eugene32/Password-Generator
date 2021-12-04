@@ -50,6 +50,16 @@ var generateBtn = document.querySelector("#generate");
     fullSpecialChar = fullSpecialChar.concat(tempList);
     console.log(fullSpecialChar);
 
+    var fullCharSet = fullSpecialChar.concat(alphabetOnUpperCase);
+    fullCharSet = fullCharSet.concat(numbers);
+    fullCharSet = fullCharSet.concat(alphabetOnLowerCase);
+      console.log(fullCharSet);
+    
+
+
+
+
+
     // Asks for the number of characters for the password and saves unto the variable
     var passwordLength = prompt("Enter length of desired password (8~128 chars):");
 
@@ -64,8 +74,9 @@ var generateBtn = document.querySelector("#generate");
         var includeUpperCase = window.confirm("Include UPPER case characters?");
           console.log(includeUpperCase);
 
-          var password = [];
-          
+          var password = [""];
+          console.log("The current password is:  " + password);
+
           if (includeUpperCase){
             
             var upperCaseChar = randomize(alphabetOnUpperCase);  // Choose random upper case letter from the array.
