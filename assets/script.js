@@ -74,7 +74,7 @@ var generateBtn = document.querySelector("#generate");
         var includeUpperCase = window.confirm("Include UPPER case characters?");
           console.log(includeUpperCase);
 
-          var password = [""];
+          var password = [];
           console.log("The current password is:  " + password);
 
           if (includeUpperCase){
@@ -83,7 +83,7 @@ var generateBtn = document.querySelector("#generate");
             console.log("This is the random upper case character:  " + upperCaseChar);
             passwordLength--;
             console.log(passwordLength);
-            password = password.push(upperCaseChar);
+            password = password.concat(upperCaseChar);
             console.log("This is the current password: " + password);
           }
 
@@ -94,7 +94,8 @@ var generateBtn = document.querySelector("#generate");
             console.log("This is the lower case character: " + lowerCaseChar);
             passwordLength--;
             console.log(passwordLength);
-            password = password.push(lowerCaseChar);
+            password = password.concat(lowerCaseChar);
+            console.log("This is the current password: " + password);
           }
 
         var includeNumbers = window.confirm("Include NUMERIC characters?");
@@ -103,7 +104,8 @@ var generateBtn = document.querySelector("#generate");
             var numbersChar = randomize(numbers)
             console.log("This is the number character: " + numbersChar);
             passwordLength--;
-            password = password.push(numbersChar);
+            password = password.concat(numbersChar);
+            console.log("This is the current password: " + password);
           }
         var includeSpecialChar = window.confirm("Include SPECIAL characters?");
           console.log(includeSpecialChar);  
@@ -112,12 +114,13 @@ var generateBtn = document.querySelector("#generate");
             console.log("This is the random special character: " + specialChar);
             passwordLength--;
             console.log(passwordLength);
-            password = password.push(specialChar);
+            password = password.concat(specialChar);
+            console.log("This is the current password: " + password);
           }
 
         for (passwordLength; passwordLength > 0; passwordLength--){
-          password = password.push(randomize(fullSpecialChar));
-          console.log(password);
+          password = password.concat(randomize(fullCharSet));
+          console.log("This is the current password: " + password);
         }
         return password;
       }
@@ -128,7 +131,7 @@ var generateBtn = document.querySelector("#generate");
       }
 
             // console.log("This button is working");
-            return 1;
+            // return 1;
     }
 
   }
