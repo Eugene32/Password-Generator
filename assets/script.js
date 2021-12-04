@@ -48,10 +48,15 @@ var generateBtn = document.querySelector("#generate");
           console.log(includeLowerCase);
           if (includeLowerCase){
             var lowerCaseChar = randomize(alphabetOnLowerCase);  // Choose random lower case letter from the array.
+            console.log(lowerCaseChar);
           }
 
         var includeNumbers = window.confirm("Include NUMERIC characters?");
           console.log(includeNumbers);
+          if (includeNumbers){
+            var numbersChar = randomize(numbers)
+            console.log(numbersChar);
+          }
         var includeSpecialChar = window.confirm("Include SPECIAL characters?");
           console.log(includeSpecialChar);
 
