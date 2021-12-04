@@ -74,7 +74,7 @@ var generateBtn = document.querySelector("#generate");
         var includeUpperCase = window.confirm("Include UPPER case characters?");
           console.log(includeUpperCase);
 
-          var password = [];
+          var password = "";
           console.log("The current password is:  " + password);
 
           if (includeUpperCase){
@@ -127,6 +127,7 @@ var generateBtn = document.querySelector("#generate");
       else {
         console.log("Input is outside scope of allowable values.");
         window.alert("The input does not comply with password length requirement or is an invalid input.");
+        return "You Secure Password"
         
       }
 
