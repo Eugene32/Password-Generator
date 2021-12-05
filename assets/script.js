@@ -92,7 +92,6 @@ var generateBtn = document.querySelector("#generate");
         if (includeSpecialChar) {       
           fullCharSet = fullCharSet.concat(fullSpecialChar);
           var specialChar =  randomize(fullSpecialChar);                                          // Choose random SPECIAL CHAR from the array.
-          console.log("This is the random special character: " + specialChar);
           passwordLength--;
           password = password.concat(specialChar);
         }
