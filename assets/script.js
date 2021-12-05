@@ -1,10 +1,6 @@
 // Assignment Code
 var generateBtn = document.querySelector("#generate");
 
-
-
-
-
   function generatePassword(){
 
     // Creat an array of capital letters from A to Z
