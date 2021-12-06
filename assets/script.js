@@ -107,11 +107,11 @@ var generateBtn = document.querySelector("#generate");
           password = password.split('');
 
           // Rearrange the array randomnly
-          for (n = password.length -1; n > 0 ; n--) {
-            j = Math.floor(Math.random() * n)
-            tempList = password[n];
-            password[n] = password[j];
-            password[j] = tempList;
+          for (var n = password.length -1; n > 0 ; n--) {
+            pointer = Math.floor(Math.random() * n)
+            tempList = password[n];                                                           // Recycle the variable for this use.
+            password[n] = password[pointer];
+            password[pointer] = tempList;
           }  
 
           // Converts the array back to string.
