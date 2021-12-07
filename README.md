@@ -15,7 +15,7 @@ A corresponding random password will then be generated, with at least one charac
 Web page link --> [Password Generator](https://eugene32.github.io/Password-Generator/)
 
 Web page preview:
-![alt Page Preview][logo]
-[logo]:https://github.com/Eugene32/Password-Generator/blob/main/assets/03-javascript-homework-demo.png
+![alt text][logo]
+[logo]:https://github.com/Eugene32/Password-Generator/blob/main/assets/03-javascript-homework-demo.png "Page Demo"
 
 
