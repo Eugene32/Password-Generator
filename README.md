@@ -17,5 +17,5 @@ Web page link --> [Password Generator](https://eugene32.github.io/Password-Gener
 Web page preview:
 ![alt text][logo]
 
-[logo]: https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 2"
+[logo]: assets/03-javascript-homework-demo.png "Password Generator"
 
