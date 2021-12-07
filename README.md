@@ -2,7 +2,7 @@
 
 The web page was intended for the sole purpose of creating a random password.
 
-Ask a series of question for generating a random password.
+Asks a series of question for generating a random password.
  * No. of characters in a password. Minimum of 8 characters and a max of 128.
  * Inclusion of CAPITAL letters?
  * Inclusion of LOWER CASE letters?
