@@ -105,13 +105,14 @@ var generateBtn = document.querySelector("#generate");
 
           // Converts a string to an array 
           password = password.split('');
+          var pointer;
 
-          // Rearrange the array randomnly
+          // Rearrange the array randomnly to remove the pattern based on the choices.
           for (var n = password.length -1; n > 0 ; n--) {
             pointer = Math.floor(Math.random() * n)
-            tempList = password[n];                                                           // Recycle the variable for this use.
-            password[n] = password[pointer];
-            password[pointer] = tempList;
+            tempList = password[n];                         // Save the pointed character (by the n) of the password into a temp container.
+            password[n] = password[pointer];                // Replace the last character with the randomly picked password.
+            password[pointer] = tempList;                   // Put the saved character (last character) to the location of the moved character.  This completes the swapping.
           }  
 
           // Converts the array back to string.
